@@ -44,6 +44,10 @@ decoded = []
 currentstring = 0
 listofstrings = []
 
+if sensitive is not True:
+    print("Sensitive data mode is not on. strings will be sent to the internet. Use '-s' flag to ensure strings are only parsed locally")
+
+
 def ensure_str(s, encoding='latin-1', errors='strict'):
     """Coerce *s* to `str`.
     For Python 2:
